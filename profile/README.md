@@ -44,7 +44,7 @@ Every customer gets a persistent, identity-bound NUBAN. Every inbound transfer i
 | | Focus |
 |---|---|
 | [@kellslte](https://github.com/kellslte) — Max | Core service: provisioning, ledger, reconciliation, developer API |
-| [@teammate](https://github.com/teammate) | Developer experience: docs site, OpenAPI, dashboard, test harness |
+| [@cn-techlite](https://github.com/cn-techlite) - JP | Developer experience: docs site, OpenAPI, dashboard, test harness |
 
 ## Why "Systyn"?
 
