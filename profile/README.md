@@ -30,7 +30,8 @@ Every customer gets a persistent, identity-bound NUBAN. Every inbound transfer i
 
 | | |
 |---|---|
-| 🌐 Live MVP | _coming soon — deployed on Render_ |
+| 🌐 Live API | [vaultnuban.onrender.com](https://vaultnuban.onrender.com) |
+| 🖥️ Dashboard | [vaultnuban-client.pages.dev](https://vaultnuban-client.pages.dev) |
 | 📚 API docs | [vaultnuban-docs.pages.dev](https://vaultnuban-docs.pages.dev) |
 | 🎬 Demo video | _coming soon (2–3 min)_ |
 | 🔑 Judge access | Test credentials in the submission — or open an issue and we'll send a key |
