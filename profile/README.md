@@ -33,8 +33,16 @@ Every customer gets a persistent, identity-bound NUBAN. Every inbound transfer i
 | 🌐 Live API | [vaultnuban.onrender.com](https://vaultnuban.onrender.com) |
 | 🖥️ Dashboard | [vaultnuban-client.pages.dev](https://vaultnuban-client.pages.dev) |
 | 📚 API docs | [vaultnuban-docs.pages.dev](https://vaultnuban-docs.pages.dev) |
-| 🎬 Demo video | _coming soon (2–3 min)_ |
-| 🔑 Judge access | Test credentials in the submission — or open an issue and we'll send a key |
+
+### 🔑 Judge access
+
+Sign in with any of the roles below to explore the platform from that perspective.
+
+| Role | Sign-in URL | Email | Password |
+|---|---|---|---|
+| Admin Operations | [/admin/login](https://vaultnuban-client.pages.dev/admin/login) | `operator@systyn.io` | `Admin1234!` |
+| Tenant Operations | [/login](https://vaultnuban-client.pages.dev/login) | `bisi@acme.io` | `Ops1234!` |
+| Tenant Developer | [/login](https://vaultnuban-client.pages.dev/login) | `ada@acme.io` | `Dev1234!` |
 
 **Stack:** Go (core service, webhook ingestor, reconciliation worker) · TypeScript (docs & dashboard) · PostgreSQL (Neon) · Redis (Upstash) · GitHub Actions CI
 
