@@ -46,7 +46,7 @@ Sign in with any of the roles below to explore the platform from that perspectiv
 
 **Stack:** Go (core service, webhook ingestor, reconciliation worker) · TypeScript (docs & dashboard) · PostgreSQL (Neon) · Redis (Upstash) · GitHub Actions CI
 
-**The proof we care about most:** our CI runs a reconciliation harness on every push — 50 synthetic transfers with deliberately duplicated webhook deliveries and a simulated outage, asserting every transfer posts exactly once and the ledger balances to zero.
+**The proof we care about most:** on every push, CI runs a 9-scenario reconciliation harness (`go test ./harness/...`) against an in-memory provider and ledger. The headline scenario drives **50 randomized transfers** through both delivery channels at once — a random subset delivered 2–3× to exercise duplicate-delivery idempotency, and a random "outage" subset dropped from the webhook stream and recovered by the Transactions-API sweep — asserting **every transfer posts exactly once**. Alongside it, targeted scenarios cover suspense routing (closed and unmatched accounts), reversals, and KYC tier-limit caps. Every scenario ends by asserting the double-entry invariant: Σ debits == Σ credits, to the kobo.
 
 ## The team
 
